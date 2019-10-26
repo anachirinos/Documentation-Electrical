@@ -252,9 +252,29 @@
     covering its upper surfaces. All the solar panels on our car are
     encapsulated to increase the efficiency of the panels; Encapsulation
     is the process by which our panels are coated with tiny prisms to
-    refract the light more perpendicularly into the panels. The solar
-    arrays on the car cost around \$100 000. Figure \ref{fig:arr_schem}
-    shows the schematic of how our arrays are wired into the car.
+    refract the light more perpendicularly into the panels. The power
+    draw from the arrays is controlled through two Max Power Point
+    Trackers or MPPTs. The Schulich Elysia uses two Dilithium Photon 3
+    MPPTs, valued at \$2200 a piece. The MPPTs tracks the power output
+    of the array, and chooses a voltage to maximize the power output as
+    shown in figure \ref{fig:mppt-graph}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{images/MPPT_Diagram.png}
+        \caption{The graph of Power vs Voltage for the MPPTs}
+        \label{fig:mppt-graph}
+    \end{figure}
+    A picture of one the Dilithium Photon 3 MPPT is shown in figure
+    \ref{fig:mppt}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{images/mppt.jpg}
+        \caption{One of the MPPTs used in Elysia}
+        \label{fig:mppt}
+    \end{figure}
+    The solar arrays on the car cost around \$100 000. Figure
+    \ref{fig:arr_schem} shows the schematic of how our arrays are wired
+    into the car.
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.5\textwidth]{images/array_schem.png}
