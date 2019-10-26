@@ -162,6 +162,8 @@
         from Beakerhead 2019}
         \label{fig:lights}
     \end{figure}
+
+    % Battery
     \section{Battery Systems}
     The battery provides the electrical power for the car. The battery
     consists of a $10 000\ mAh$ nickle metal hydride auxiliary battery,
@@ -184,7 +186,7 @@
     (AUX BMS), the DC to DC converter PCB and the aux battery itself.
     The internal electrics of the battery can be seen in figure
     \ref{fig:bat-in}.
-    \begin{figure}
+    \begin{figure}[H]
         \centering
         \includegraphics[width=0.5\textwidth]{images/batt-elec.jpg}
         \caption{The insides of the battery}
@@ -193,7 +195,7 @@
     The Orion Battery management systems main job is to monitor the
     temperature, voltage, and current output of the battery. Should any
     of the expected values ever become unsafe it will send a message to
-    the AUX BMS board. The Orion BMS costs around \$3 000.
+    the AUX BMS board. The Orion BMS costs around \$3 000.\\
     \par The AUX BMS has three major jobs. The first of its jobs is
     monitoring the AUX battery output. The second and more important is
     monitoring the output of the main BMS. In the event that the BMS
