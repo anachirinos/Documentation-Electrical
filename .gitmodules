@@ -1,0 +1,3 @@
+[submodule "misc/busi_elec_overview"]
+	path = misc/busi_elec_overview
+	url = https://github.com/UCSolarCarTeam/Business-Electrical-Overview
