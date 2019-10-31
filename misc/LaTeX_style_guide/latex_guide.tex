@@ -1,0 +1,149 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University of Calgary Solar Car Team 
+% LaTeX Template
+% Version 1.0 (23/10/19)
+% % This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% WikiBooks (http://en.wikibooks.org/wiki/LaTeX/Title_Creation)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+% Instructions for using this template:
+% This title page is capable of being compiled as is. This is not useful for 
+% including it in another document. To do this, you have two options: 
+%
+% 1) Copy/paste everything between \begin{document} and \end{document} 
+% starting at \begin{titlepage} and paste this into another LaTeX file where you 
+% want your title page.
+% OR
+% 2) Remove everything outside the \begin{titlepage} and \end{titlepage} and 
+% move this file to the same directory as the LaTeX file you wish to add it to. 
+% Then add \input{./title_page_1.tex} to your LaTeX file where you want your
+% title page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\title{Title page with logo}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{hyperref}
+\usepackage[tocentry]{vhistory}
+\usepackage{appendix}
+
+%Table of contents links
+\hypersetup{
+    colorlinks=true, %set true for colored links
+    linktoc=all,     %set to have both sections and subsections linked
+    linkcolor=black,  %choose some color if you want links to stand out
+    urlcolor=brown,
+}
+
+\begin{document}
+
+    \begin{titlepage}
+        % Defines a new command for the horizontal lines,
+        % change thickness here
+        \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} 
+
+        \center % Center everything on the page
+     
+        %--------------------------------------------------------------
+        %       HEADING SECTIONS
+        %-------------------------------------------------------------
+
+        % Name of your university/college
+        \textsc{\LARGE University of Calgary Solar Car Team}\\[1.5cm]
+        % Major heading team name
+        \textsc{\Large Electrical Documentation}\\[0.5cm]
+
+        %--------------------------------------------------------------
+        %       TITLE SECTION
+        %---------------------------------------------------------------
+
+        \HRule \\[0.4cm]
+        { \huge \bfseries \LaTeX{} Style Guide}\\[0.4cm] 
+        % Title of your document
+        \HRule \\[1.5cm]
+
+        %--------------------------------------------------------------
+        %       AUTHOR SECTION
+        %--------------------------------------------------------------
+
+        \Large \emph{Original Author:}\\
+        Andreas Smit\\[3cm] % Your name
+
+        %--------------------------------------------------------------
+        %  DATE SECTION
+        %--------------------------------------------------------------
+        % Date, change the \today to a set date if you want to be precise
+        {\large \today}\\[2cm]
+
+        %---------------------------------------------------------------
+        % LOGO SECTION
+        %---------------------------------------------------------------
+        % Include a department/university logo - this will require the
+        % graphicx package
+        \includegraphics[width=\textwidth]
+        {../../Images/Logos/logo-wide.png}\\[1cm]
+
+        %---------------------------------------------------------------
+    
+        \vfill % Fill the rest of the page with whitespace
+  
+    \end{titlepage}
+  
+    %-------------------------------------------------------------------
+    %       TABLE OF CONTENTS
+    %------------------------------------------------------------------
+
+    \tableofcontents
+    \listoffigures
+    \listoftables
+    %\newpage
+
+    %-------------------------------------------------------------------
+    %       INTRODUCTION
+    %-------------------------------------------------------------------
+
+    \section{Introduction}
+    The goal of this document is to provide a guide on how the code for
+    a \LaTeX{} document should be formatted. The reason for this is two
+    fold; first it is designed to provide readability of the code in the
+    documents we are working on; second it is designed to make sure
+    there is consistency between the code written by the various members
+    of the team. As with any style guide, the guide is about consistency
+    and readability. If to follow the style guide readability or
+    consistency of the document must be broken, breaking from the style
+    guide is fine, however in the case of code consistency, that may be
+    an excuse to clean up old code.
+
+
+
+    \section{Code Layout}
+
+
+
+    \appendix
+    \section*{Appendicies}
+
+    \bibliographystyle{IEEEtran}
+    \bibliography{ref}
+
+    \begin{versionhistory}
+        \vhEntry{1.0}{23.10.2019}{CA}{Created}
+    \end{versionhistory}
+
+\end{document}
